@@ -25,6 +25,6 @@ gulp.task("sass", function () {
     .pipe(browser.reload({stream:true}))
 });
 
-gulp.task("watch", function() {
+gulp.task("watch",["server"], function() {
   gulp.watch("./sass/**/*.scss",["sass"]);
 });
