@@ -1,0 +1,24 @@
+
+$font-color: #666;
+
+body {
+  height: 100%;
+  padding: 0;
+  line-height: 1.5;
+  background: #fff;
+  color: $font-color;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  // font-weight: 700;
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+$font_default: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+// $font-en: 'Helvetica Neue', Helvetica, Arial, sans-serif;
