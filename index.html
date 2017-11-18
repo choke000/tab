@@ -1,13 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title></title>
-<link rel="stylesheet" href="css/style.css">
-</head>
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/tabmenu.js"></script>
+	</head>
+
 <body>
-<div id="maincontainer">
+
+	<div class="outer">
+		<ul class="tab__items clearfix">
+			<li class="tab__items--active">ホーム</li>
+			<li>FAQ</li>
+			<li>お問い合わせ</li>
+			<li>特定商取引法に基づく表記</li>
+		</ul>
+
+		<!-- タブの中身 -->
+		<div class="tab__contents">
+			<ul class="tab__contents--active">
+				<li>ホームの中身</li>
+			</ul>
+			<ul>
+				<li>FAQの中身</li>
+			</ul>
+			<ul>
+				<li>お問い合わせの中身</li>
+			</ul>
+			<ul>
+				<li>特定商取引法の中身</li>
+			</ul>
+		</div>
 	
-</div>
+	</div>
+
 </body>
 </html>
