@@ -1,6 +1,11 @@
-
 $font-color-default: #aaa;
 $font-color-active: #6f767c;
+
+$bg-color-tab-default: #f0f0f0;
+$bg-color-tab-active: #fafafa;
+
+$border-color: #ccc;
+
 
 html,body {
   height: 100%;
@@ -11,8 +16,7 @@ html,body {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
   // font-weight: 700;
   font-size: 15px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  overflow: hidden;
 }
 
 .clearfix:after{
@@ -20,6 +24,3 @@ html,body {
     display: block;
     clear: both;
 }
-
-$font_default: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
-// $font-en: 'Helvetica Neue', Helvetica, Arial, sans-serif;

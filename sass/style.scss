@@ -3,6 +3,7 @@
 @import '_base';
 
 
+
 .l-container {
     width: 100%;
     height: 100%;
@@ -22,7 +23,7 @@
     		left: 0;
     		z-index: 1;
     		content: " ";
-    		border-bottom-color: 1px solid #ccc;
+    		border-bottom-color: 1px solid $border-color;
     	}
 
     	&:before {
@@ -30,34 +31,34 @@
     	}
 
     	li {
-				position: relative;
-				z-index: 0;
-				margin: 0 5px;
-				padding: 10px 20px;
-				background-color: #f0f0f0;
-				border: 1px solid #ccc;
-				border-radius: 3px 3px 0 0;
-				color: $font-color-default;
-				display: inline-block;
-				cursor: pointer;
-				transition: .2s;
+			position: relative;
+			z-index: 0;
+			margin: 0 5px;
+			padding: 10px 20px;
+			background-color: $bg-color-tab-default;
+			border: 1px solid $border-color;
+			border-radius: 3px 3px 0 0;
+			color: $font-color-default;
+			display: inline-block;
+			cursor: pointer;
+			transition: .2s;
     	}
 
 	    .tab__item--active {
-				z-index: 2;
-				background-color: #fafafa;
-				border-bottom-color: #fafafa;
-				color: $font-color-active;
-				cursor: auto; 
-			}
+			z-index: 2;
+			background-color: $bg-color-tab-active;
+			border-bottom-color: $bg-color-tab-active;
+			color: $font-color-active;
+			cursor: auto; 
+		}
 	}
 }
 
 .l-content {
 	width: 100%;
 	min-height: 100%;
-	background-color: #fafafa;
-	border-top: 1px solid #ccc;
+	background-color: $bg-color-tab-active;
+	border-top: 1px solid $border-color;
 }
 
 .content__item {
@@ -66,5 +67,5 @@
 
 .is-active {
     display: block;
-    color: #ccc;
+    color: $border-color;
 }
