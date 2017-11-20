@@ -2,9 +2,10 @@
 @import '_reset';
 @import '_base';
 
-.outer {
-	width: auto;
-	padding: 80px;
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 60px 0 0 0;
 }
 
 .tab__items {
@@ -38,7 +39,7 @@
 		color: $font-color-default;
 		display: inline-block;
 		cursor: pointer;
-		transition: .3s;
+		transition: .2s;
 
 		&:first-child {
 			// margin-left: 300px;
@@ -56,7 +57,7 @@
 
 .tab__contents {
 	width: 100%;
-	height: 100px;
+	min-height: 100%;
 	background-color: #fafafa;
 
 	ul {
@@ -65,44 +66,6 @@
 
 	.tab__contents--active {
 		display: block;
-		color: #fafafa;
+		color: #ccc;
 	}
 }
-
-// .outer {
-// 	width: 800px;
-// 	margin: 0 auto;
-// 	padding: 60px 60px 0 100px;
-
-// 		ul.tab__items {
-// 		border-bottom: 1px solid #ccc;
-
-// 		li {
-// 			float: left;
-// 			margin: 0 10px -1px 0;
-// 			padding: 21px 20px 20px 20px;
-// 			border: 1px solid #ccc;
-// 			border-radius: 4px 4px 0 0;
-// 			background-color: #efefef;
-// 			cursor: pointer;
-// 			transition: .3s;
-// 		}
-
-// 		.tab__items--current {
-// 			color: darken($font-color,10%);
-// 			background-color: #f2f2f2;
-// 			cursor: auto;
-// 		}
-// 	}
-
-// 	.tab__contents {
-// 		ul {
-// 			display: none;
-// 			background-color: #f2f2f2;
-// 		}
-
-// 		.tab__contents--current {
-// 			display: block;
-// 		}
-// 	}
-// }

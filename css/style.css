@@ -399,7 +399,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
+html, body {
   height: 100%;
   padding: 0;
   line-height: 1;
@@ -415,9 +415,10 @@ body {
   display: block;
   clear: both; }
 
-.outer {
-  width: auto;
-  padding: 80px; }
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 60px 0 0 0; }
 
 .tab__items {
   text-align: right;
@@ -445,7 +446,7 @@ body {
     color: #aaa;
     display: inline-block;
     cursor: pointer;
-    transition: .3s; }
+    transition: .2s; }
   .tab__items .tab__items--active {
     background-color: #fafafa;
     border-bottom-color: #fafafa;
@@ -455,10 +456,10 @@ body {
 
 .tab__contents {
   width: 100%;
-  height: 100px;
+  min-height: 100%;
   background-color: #fafafa; }
   .tab__contents ul {
     display: none; }
   .tab__contents .tab__contents--active {
     display: block;
-    color: #fafafa; }
+    color: #ccc; }
