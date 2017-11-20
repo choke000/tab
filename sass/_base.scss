@@ -1,0 +1,26 @@
+$font-color-default: #aaa;
+$font-color-active: #6f767c;
+
+$bg-color-tab-default: #f0f0f0;
+$bg-color-tab-active: #fafafa;
+
+$border-color: #ccc;
+
+
+html,body {
+  height: 100%;
+  padding: 0;
+  line-height: 1;
+  background: #fff;
+  color: $font-color-default;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+  // font-weight: 700;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
